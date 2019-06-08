@@ -15,5 +15,6 @@ Database spool dir: /usr/local/var/lib/ejabberd
 Script Checked on Debian Stretch with backports and Ejabberd 19.05
 
 Please note that Elixier was not included in the Script as part of the Dependency Install.
-However if installed the Elixier related D Functionality would also be made available. 
+However if installed the Elixier related D Functionality would also be made available.
+
 Notes:ejabberd-contrib Modules are not Compiled. For them Seperately Compile them using erlc and copy the beam files to /usr/local/ejabberd/ebin

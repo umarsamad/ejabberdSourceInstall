@@ -12,9 +12,17 @@ Control Config ejabberdctl: /etc/ejabberd/ejabberdctl.cfg
 Directory for logs: /var/log/ejabberd
 Database spool dir: /var/lib/ejabberd
 
-Script Checked on Debian Buster with backports and Ejabberd 19.09
+What's New:
 
-Please note that Elixier was not included in the Script as part of the Dependency Install.
-However if installed the Elixier related Functionality would also be made available.
+- Script Checked on Debian Buster with backports and Ejabberd 20.04
+- Ejabberd STUN/TURN Support in Ejabberd 20.04 tested working using this script.
+- User Prior to Running Scripts can select the Git Repository for the ejabberd version to be installed. Checked and working
+- Script also can now Upgrade the Existing Git Based Installation
+- Elixier is now supported, however not tested. This is just installation.
+
+Installation Notes:
+
+- In Case of an existing ejabberd installatin , the ejabberd.yml file will be renamed with extension ".bak"
+- Post Installation whether "From Scratch New" or Upgrade the "Ejabberd.yml" file part of the installation is renamed to "ejabberd.yml.new". Ensure to rename it back to ejabberd.yml and restart the ejabberd services"
 
 Notes: ejabberd-contrib Modules are not Compiled. For them Seperately Compile them using erlc and copy the beam files to /usr/local/ejabberd/ejabberd-module or what is your setting in ejabberdctl.cfg

@@ -20,6 +20,11 @@ What's New:
 - Script also can now Upgrade the Existing Git Based Installation
 - Elixier is now supported, however not tested. This is just installation.
 
+STUN/TURN Support:
+- For STUN/TURN Configuration Please Refer to Below:
+  - https://github.com/weiss/ejabberd/commits/xep-0215
+  - https://docs.ejabberd.im/admin/configuration/modules/#mod-stun-disco
+  
 Installation Notes:
 
 - In Case of an existing ejabberd installatin , the ejabberd.yml file will be renamed with extension ".bak"
